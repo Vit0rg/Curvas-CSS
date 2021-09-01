@@ -5,7 +5,6 @@
 }
 
 /*Cores:*/
-
 .blue
 {
   background-color: hsl(221, 100%, 18%);
@@ -27,7 +26,6 @@
 }
 
 /*Camadas*/
-
 .camada1
 {
   background-image: url('../img/camada1.svg');
@@ -39,7 +37,6 @@
 }
 
 /*Ajustes gerais:*/
-
 *{
   padding: 0;
   margin: 0;
@@ -176,7 +173,6 @@ header h1
 }
 
 /*Intro da curva de Bézier*/
-
 .red h1
 {
   padding-top: 8%;
@@ -189,7 +185,6 @@ header h1
 }
 
 /*Ondas:*/
-
 .onda 
 {
   position: absolute;
@@ -246,6 +241,11 @@ header h1
 }
 
 /*Blob animado*/
+.blob-animado
+{
+  margin-top: -1%;
+}
+
 .blob-animado h1
 {
   font-size: 3em;
