@@ -1,0 +1,265 @@
+:root
+{
+  --fundo: hsl(283, 23%, 6%);
+  --fonte: hsl(0, 0%, 100%);
+}
+
+/*Cores:*/
+
+.blue
+{
+  background-color: hsl(221, 100%, 18%);
+}
+
+.red
+{
+  background-color: hsl(0, 100%, 18%);
+}
+
+.pink
+{
+  background-color: hsl(310, 100%, 26%);
+}
+
+.dark
+{
+  background-color: hsl(0, 0%, 10%);
+}
+
+/*Camadas*/
+
+.camada1
+{
+  background-image: url('../img/camada1.svg');
+}
+
+.camada2
+{
+  background-image: url('../img/camada2.svg');
+}
+
+/*Ajustes gerais:*/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: 'Recursive', sans-serif;
+  letter-spacing: .05em;
+  color: var(--fonte);
+  background-color: var(--fundo);
+  font-size: 22px;
+  overflow-x: hidden;
+}
+
+section
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+  padding: 6% 20vw;
+}
+
+
+/*Header:*/
+header h1
+{
+  font-size: 6em;
+  min-height: 5vh;
+}
+
+/*Introdução:*/
+#intro
+{
+  min-height: 40vh;
+}
+
+#intro p
+{
+  margin-top: 6%;
+  padding: 5% 0;
+}
+
+/*Curva header-intro:*/
+.curva
+{
+  position: absolute;
+  height: 30vh;
+  width: 100%;
+  bottom: 0;
+  line-height: 0;
+}
+
+.curva::before
+{
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: var(--fundo);
+  transform: translate(85%,60%);
+}
+
+.curva::after
+{
+  content:'';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: hsl(221, 100%, 18%);
+  transform: translate(-4%, 40%);
+  z-index: -1;
+}
+
+/*Bolha intro-lista de curvas*/
+.bolha::after
+{
+  content:'';
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  min-height: 55vh;
+  width: 100%;
+  background-color: hsl(0, 0%, 10%);
+  z-index: -1;
+}
+
+.bolha > h1
+{
+  padding-top: 8%;
+  font-size: 2em;
+}
+
+.bolha p
+{
+  padding: 4% 0 2% 0;
+}
+
+.bolha ul
+{
+  list-style-type: none;
+}
+
+.bolha li
+{
+  margin-top: 1%;
+}
+
+.bolha li a
+{
+  text-decoration: none;
+  color: var(--fonte);
+  padding: 1% 0;
+}
+
+.bolha li a:hover
+{
+ color: hsl(221, 100%, 70%);
+}
+
+/*Intro da curva de Bézier*/
+
+.red h1
+{
+  padding-top: 8%;
+  font-size: 2em;
+}
+
+.red p 
+{
+  padding-top: 3%;
+}
+
+/*Ondas:*/
+
+.onda 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.onda svg 
+{
+  position: relative;
+  display: block;
+  width: calc(156% + 1.3px);
+  height: 25%;
+}
+
+.onda .shape-fill 
+{
+  fill: hsl(0, 0%, 10%);
+}
+
+.spacer
+{
+  aspect-ratio: 3.5/1;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  line-height: 0;
+}
+
+/*Figura da curva de Bézier*/
+.bezier
+{
+  padding: 2% 20vw;
+}
+
+.bezier h1
+{
+  transform: translateY(-250%);
+  font-size: 2em;
+}
+
+.bezier img
+{
+  transform: translateY(-20%);
+  background-color: hsl(285, 100%, 94%);
+  width: 100%;
+  height: 75%;
+}
+
+/*Blob animado*/
+.blob-animado
+{
+  z-index: -2;
+}
+
+.blob-animado h1
+{
+  font-size: 3em;
+}
+
+.blob-animado p
+{
+  padding-top: 5%;
+}
+
+/*Atalho para inversão de itens:*/
+.flip
+{
+  transform: rotate(180deg);
+}
+
+/*Animação do Blob*/
+.blob-motion
+{
+  position: absolute;
+  transform: rotateY(-20%);
+}

@@ -1,0 +1,133 @@
+@media screen and (max-width:1090px) 
+{
+  body
+  {
+    overflow-x: hidden;
+    font-size: 18px;
+  }
+
+  section
+  {
+    padding: 5% 20vw;
+  }
+
+  .bolha::after
+  {
+    min-height: 70vh;
+  }
+
+  .bolha >h1
+  {
+    padding-top: 12%;
+  }  
+
+}
+
+@media screen and (max-width: 820px)
+{
+  section
+  {
+    padding: 7% 10vw;
+  }
+
+  .bolha::after
+  {
+    min-height: 65vh;
+  }
+
+  .bolha >h1
+  {
+    padding-top: 14%;
+  }  
+  
+}
+
+@media screen and (max-width: 740px)
+{
+  body
+  {
+    font-size: 16px;
+  }
+
+  body p
+  {
+    overflow-wrap: break-word;
+  }
+  section
+  {
+    padding: 9% 10vw;
+  }
+
+  .bolha::after
+  {
+    min-height: 75vh;
+  }
+
+}
+
+@media screen and (max-width: 500px)
+{  
+  body h1
+  {
+    font-size: 3.5em;
+  }
+
+  section
+  {
+    padding: 10% 5vw;
+  }
+  
+  .curva
+  {
+    max-height: 12vh;
+  }
+
+  .bolha
+  {
+    min-height: 85vh;
+    padding-bottom: 0;
+  }
+
+  .bolha:after
+  {
+    min-height: 82vh;
+    width: 120%;
+  }
+
+  .bolha > h1
+  {
+    padding-top: 75%;
+  }
+
+  .onda svg
+  {
+    height: 25vh;
+  }
+
+  .red
+  {
+    min-height: 70vh;
+  }
+
+  .red h1
+  {
+    margin-top: 18%;
+  }
+
+  .bezier
+  {
+    padding: 8% 5vw;
+    height: 85vh;
+  }
+
+  .bezier h1
+  {
+    transform: translateY(-25%);
+  }
+
+  .bezier img
+  {
+  transform: translateY(0);
+  margin-bottom: 5%;
+  }
+}

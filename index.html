@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curvas</title>
+    <link rel="stylesheet" href="style/main.css"/>
+    <link rel="stylesheet" href="style/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <section class="blue">
+        <h1>Curvas</h1>
+        <div class="curva"></div>
+      </section>
+    </header>
+
+    <section id="intro">
+      <p>
+        Tecnicamente, uma curva é o lugar geométrico ou trajetória seguida por
+        um ponto que se move de acordo com uma ou mais leis especificadas, neste
+        caso, as leis comporão uma condição necessária e suficiente para a
+        existência do objeto definido. Frequentemente há maior interesse nas
+        curvas em um espaço euclidiano de duas dimensões (curvas planas) ou três
+        dimensões (curvas espaciais).
+      </p>
+    </section>
+
+    <section class="bolha">
+      <h1>Listas de curvas famosas</h1>
+      <p>Os seguintes sites tem referências detalhadas sobre curvas:</p>
+      <ul>
+        <li>
+          <a href="https://pt.wikipedia.org/wiki/Lista_de_curvas" target="blank"
+            >Wikipédia-Lista de curvas (em Português)</a
+          >
+        </li>
+        <li>
+          <a href="https://www.matematica.pt/util/curvas.php" target="blank"
+            >Utiitário do site Matematica.pt (em Português)</a
+          >
+        </li>
+        <li>
+          <a href="https://mathshistory.st-andrews.ac.uk/Curves/" target="blank"
+            >Site da Universidade de St. Andrews (em Inglês)</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section class="red">
+      <h1>Curva de Bézier</h1>
+      <p>
+        Ela foi desenvolvida em 1962 e seu nome é devido a quem publicou o
+        primeiro trabalho sobre a curva, o francês Pierre Bézier, funcionário da
+        Renault, que a usou para o design de automóveis.
+      </p>
+      <p>
+        É uma curva utilizada em diversas aplicações gráficas como o
+        Illustrator, Freehand, Fireworks, GIMP, Photoshop, Processing, Inkscape
+        e CorelDRAW, e formatos de imagem vetorial como o SVG.
+      </p>
+      <div class="onda">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <div class="spacer camada1"></div>
+
+    <section class="bezier">
+      <h1>Curva de Bézier cúbica</h1>
+      <img src="./img/bezier.svg" alt="Curva de Bézier.svg" />
+      <p>
+        Esta curva (cujo maior expoente é 3) é usada para criação de elipses e
+        foi usado em diversas seções desta página.
+      </p>
+      <br />
+      <p>
+        Ela foi estruturada a partir do algoritmo de Paul de Casteljau, da
+        Citroën, em 1957, e foi formalizada na década de 60.
+      </p>
+    </section>
+
+    <div class="spacer camada2 flip"></div>
+
+    <section class="pink blob-animado">
+      <h1>Blob animado</h1>
+      <p>
+        Esta figura usa animação vetorial de uma curva fechada dando a sensação
+        de fluidez.
+      </p>
+      <svg
+        id="visual"
+        viewBox="0 0 960 300"
+        width="960"
+        height="300"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <g transform="translate(487.90862853771176 164.57874334100612)">
+          <path
+            id="blob1"
+            d="M71.8 -105.8C84.8 -89.3 81.4 -57.3 87.6 -30.3C93.8 -3.3 109.7 18.7 108.3 38.9C106.8 59 88.1 77.2 67.2 85.6C46.2 94 23.1 92.5 4.2 86.7C-14.7 80.9 -29.4 70.8 -52.5 63.1C-75.7 55.5 -107.3 50.3 -118.8 34.1C-130.3 17.8 -121.7 -9.5 -109.3 -31.7C-96.8 -53.9 -80.4 -71 -61.6 -85.6C-42.7 -100.1 -21.4 -112.1 4 -117.6C29.4 -123.1 58.8 -122.2 71.8 -105.8"
+            fill="#bf006e"
+          ></path>
+        </g>
+
+        <g
+          transform="translate(471.08032189168847 158.26218744981674)"
+          style="visibility: hidden"
+        >
+          <path
+            id="blob2"
+            d="M81 -105C104.8 -94.2 123.7 -70.3 131.4 -43.4C139.2 -16.6 135.7 13.2 121.3 33.9C106.9 54.5 81.7 66.1 59.7 75.8C37.6 85.4 18.8 93.2 -1.7 95.5C-22.1 97.8 -44.3 94.6 -56.2 81.6C-68.1 68.7 -69.7 45.9 -82.2 23C-94.8 0.1 -118.3 -23 -117.6 -42.3C-117 -61.7 -92.3 -77.4 -68.7 -88.2C-45.1 -99 -22.5 -105 3 -109.2C28.6 -113.4 57.2 -115.7 81 -105"
+            fill="#bf006e"
+          ></path>
+        </g>
+      </svg>
+      <!--Animação dos blobs usando KUTE.JS:-->
+      <script>
+        const tween = KUTE.fromTo(
+          "#blob1",
+          { path: "#blob1" },
+          { path: "#blob2" },
+          { repeat: 999, duration: 3000, yoyo: true }
+        );
+
+        tween.start();
+      </script>
+    </section>
+    <div class="spacer camada2"></div>
+  </body>
+</html>
