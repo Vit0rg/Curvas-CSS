@@ -91,13 +91,13 @@
 
   .bolha
   {
-    min-height: 75vh;
+    min-height: 82.5vh;
     padding: 1vh 5vw;
   }
 
   .bolha:after
   {
-    min-height: 75vh;
+    min-height: 82.5vh;
     width: 120%;
   }
 
